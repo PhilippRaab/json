@@ -13,6 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "@codemirror/next": "^0.4.0",
+    "esm": "^3.2.25",
     "lezer-generator": "^0.8.4",
     "lezer-tree": "^0.8.4",
     "mocha": "^7.1.1",
@@ -31,7 +32,7 @@
     "build": "lezer-generator src/json.grammar -o src/parser && rollup -c",
     "build-debug": "lezer-generator src/json.grammar --names -o src/parser && rollup -c",
     "prepare": "npm run build",
-    "test": "npm run build && mocha test/test-json.js",
+    "test": "npm run build && mocha test/test-json.js --require esm",
     "demo:dev": "parcel index.html --out-dir docs",
     "demo:build": "rm -rf docs && parcel build index.html --out-dir docs --public-url '.'"
   }
