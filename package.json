@@ -9,20 +9,21 @@
     "require": "./dist/index.cjs"
   },
   "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "author": "Arun Srinivasan <rulfzid@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@codemirror/next": "^0.4.0",
+    "@codemirror/next": "^0.12.0",
     "esm": "^3.2.25",
-    "lezer-generator": "^0.8.4",
-    "lezer-tree": "^0.8.4",
-    "mocha": "^7.1.1",
+    "lezer-generator": "^0.10.5",
+    "lezer-tree": "^0.10.0",
+    "mocha": "^8.1.3",
     "parcel-bundler": "^1.12.4",
-    "rollup": "^1.10.0",
-    "rollup-plugin-node-resolve": "^4.2.3"
+    "rollup": "^2.27.1",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
-    "lezer": "^0.8.0"
+    "lezer": "^0.10.4"
   },
   "repository": {
     "type": "git",
